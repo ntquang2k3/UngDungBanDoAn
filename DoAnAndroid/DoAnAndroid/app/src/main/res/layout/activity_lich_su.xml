@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HoaDonActivity">
+
+    <TextView
+        android:id="@+id/tvHSAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Hamburrger Bò Miếng HAPI - Tân Quý" />
+
+    <TextView
+        android:id="@+id/tvKhoangCachHSAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Khoảng cách tới chỗ bạn : " />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#BDBDBD" />
+
+    <TextView
+        android:id="@+id/tvGiaoToi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:text="Giao tới" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/tvDiaChiGiaoHSAC"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="0"
+                android:text="72/34 Dương Đức Hiền" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#BDBDBD" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageIconGiaoHang"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/icon_delivery" />
+
+            <TextView
+                android:id="@+id/tvGiaoHang"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="0"
+                android:text="Giao hàng" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#BDBDBD" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNhanh20phut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="Nhanh nhỏ hơn', 20 phút" />
+
+            <TextView
+                android:id="@+id/tv21000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="21.000" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTomTatDonHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:text="Tóm tắt đơn hàng" />
+
+        <ListView
+            android:id="@+id/lvChiTietHSAC"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" >
+        </ListView>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvTongTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:text="Tổng tiền" />
+            <TextView
+                android:id="@+id/tvTongTienHSAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:text="94.700" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvTongCong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:text="Tổng cộng :" />
+            <TextView
+                android:id="@+id/tvTongCongHSAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:text="94.700" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

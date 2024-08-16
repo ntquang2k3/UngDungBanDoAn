@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageViewAcc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/an_vat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên" />
+
+
+    <EditText
+        android:id="@+id/edtTenKhachHangAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:ems="20"
+        android:text="Tên khách hàng:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại" />
+
+    <EditText
+        android:id="@+id/edtSoDienThoaiAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        android:ems="20"
+        android:text="Số điện thoại:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập địa chỉ email của bạn" />
+
+    <EditText
+        android:id="@+id/edtEmailAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        android:ems="20"
+        android:text="Email:" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập địa chỉ giao hàng của bạn" />
+
+    <EditText
+        android:id="@+id/edtDiaChiAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        android:ems="20"
+        android:text="Địa chỉ giao hàng:" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điểm tích lũy" />
+
+    <EditText
+        android:id="@+id/edtDiemTichLuyAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:inputType="textPersonName"
+        android:ems="20"
+        android:enabled="false"
+        android:text="Điểm tích lũy:" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnCapNhatAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/black"
+        android:text="Cập nhật thông tin" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnDangXuatAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/black"
+        android:text="Đăng xuất" />
+
+
+
+</LinearLayout>

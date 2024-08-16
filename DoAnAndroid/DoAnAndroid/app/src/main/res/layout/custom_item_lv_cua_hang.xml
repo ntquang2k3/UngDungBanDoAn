@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="20dp">>
+
+    <ImageView
+        android:id="@+id/anhDaiDienCuaHang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/banh_trang_a_thuy" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/anhDaiDienCuaHang"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tenCuaHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="Bánh Tráng Lòng Đào Tóp Mỡ" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/anhSao"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:scaleType="fitStart"
+                android:src="@drawable/icon_star" />
+
+            <TextView
+                android:id="@+id/soSaoDanhGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.9" />
+
+            <TextView
+                android:id="@+id/soLuongDanhGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(323) ... $$$$" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/phiGiaoHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ship: 30.000đ" />
+
+        <TextView
+            android:id="@+id/khoangCach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.7km" />
+    </LinearLayout>
+</RelativeLayout>

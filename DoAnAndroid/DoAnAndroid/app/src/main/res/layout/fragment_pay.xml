@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BDDBE8"
+    android:padding="10dp"
+    tools:context=".FragmentPay">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:layout_weight="0"
+        android:text="Thanh toán"
+        android:textColor="@color/purple_700"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textColor="#284029"
+        android:textSize="20dp"
+        android:text="Cách thức thanh toán tiện lợi nhất" />
+
+    <ImageView
+        android:paddingLeft="10dp"
+        android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="0"
+        android:src="@drawable/image_visa" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="7dp"
+        android:layout_weight="0"
+        android:background="@color/purple_700"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:text="Moca Wallet" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="29dp"
+            android:text="0đ" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:padding="7dp"
+        android:background="#1DC624"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Ví Moca đã dừng hoạt động" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="Đề xuất cho bạn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/purple_gradient"
+            android:orientation="vertical">
+
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="Nạp tiền điện thoại để giữ kết nối" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/smart_phone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/blue_gradient"
+                android:orientation="vertical">
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="Thanh toán hóa đơn mọi lúc" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bill" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
